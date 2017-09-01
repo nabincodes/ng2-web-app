@@ -9,7 +9,7 @@
 
   <!--NAVIGATION MENU-->
   <nav class="navbar navbar-default">
-    
+
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu">
           <span class="sr-only">Toggle navigation</span>
@@ -29,7 +29,7 @@
         <ul class="nav navbar-nav navbar-right">
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+              <input type="text" class="form-control" [(ngModel)]="searchBox" name="searchBox" placeholder="Search">
             </div>
             <button type="submit" class="btn btn-success">Search</button>
           </form>
@@ -38,7 +38,8 @@
 
   </nav>
 
-
 </div>
+
+<app-book-lists></app-book-lists>
 
 
